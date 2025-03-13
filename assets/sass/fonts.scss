@@ -4,23 +4,27 @@
   font-style: normal;
   font-weight: 700;
 }
+
 @font-face {
   font-family: "Leckerli One", cursive;
-  src: local(Leckerli One) url(../../assets/fonts/LeckerliOne-Regular.ttf) format("truetype");
+  src: local(Leckerli One) url(../../assets/fonts/LeckerliOne-Regular.ttf)
+    format("truetype");
   font-style: normal;
   font-weight: 400;
 }
+
 @font-face {
   font-family: "Open Sans", sans-serif;
-  src: local(Open Sans) url(../../assets/fonts/OpenSans-Regular.ttf) format("truetype");
+  src: local(Open Sans) url(../../assets/fonts/OpenSans-Regular.ttf)
+    format("truetype");
   font-style: normal;
   font-weight: 400;
 }
+
 @font-face {
   font-family: "Open Sans", sans-serif;
-  src: local(Open Sans) url(../../assets/fonts/OpenSans-SemiBold.ttf) format("truetype");
+  src: local(Open Sans) url(../../assets/fonts/OpenSans-SemiBold.ttf)
+    format("truetype");
   font-style: normal;
   font-weight: 600;
 }
-
-/*# sourceMappingURL=index.css.map */
