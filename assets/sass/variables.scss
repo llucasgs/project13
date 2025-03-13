@@ -1,45 +1,28 @@
-@font-face {
-  font-family: "Baloo 2", sans-serif;
-  src: local(Baloo 2) url(../../assets/fonts/Baloo2-Bold.ttf) format("truetype");
-  font-style: normal;
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Leckerli One", cursive;
-  src: local(Leckerli One) url(../../assets/fonts/LeckerliOne-Regular.ttf) format("truetype");
-  font-style: normal;
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Open Sans", sans-serif;
-  src: local(Open Sans) url(../../assets/fonts/OpenSans-Regular.ttf) format("truetype");
-  font-style: normal;
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Open Sans", sans-serif;
-  src: local(Open Sans) url(../../assets/fonts/OpenSans-SemiBold.ttf) format("truetype");
-  font-style: normal;
-  font-weight: 600;
-}
 * {
   /*Fontes*/
   --font-family1: "Baloo 2", sans-serif;
   --font-family2: "Leckerli One", cursive;
   --font-family3: "Open Sans", sans-serif;
+
   --logo: 400 4rem var(--font-family2);
+
   --headingMd: 700 2.8rem var(--font-family1);
   --headingSm: 700 1.8rem var(--font-family1);
+
   --bodyMd: 400 1.6rem var(--font-family3);
   --bodyMd: 600 1.6rem var(--font-family3);
+
   --bodySm: 400 1.4rem var(--font-family3);
   --bodySm: 600 1.4rem var(--font-family3);
+
   --bodyXs: 400 1.2rem var(--font-family3);
   --bodyXs: 600 1.2rem var(--font-family3);
+
   /*Cores*/
   --brand-light: #59b2ff;
   --brand-mid: #3487cf;
   --brand-dark: #1d6fb6;
+
   --purple: #b259ff;
   --fuschia: #ff59f9;
   --pink: #ff598b;
@@ -49,16 +32,18 @@
   --green: #59ff91;
   --cyan: #59fff9;
   --navy: #6a59ff;
+
   --danger: #ff5959;
+
   --input-base: #1c1f21;
   --input-stroke: #363b40;
   --input-placeholder: #869198;
+
   --shape-background: #131516;
   --shape-body: #212427;
   --shape-button: #2d3136;
   --shape-hover: #383d42;
+
   --text-body: #c8cdd0;
   --text-heading: #f9f9f9;
 }
-
-/*# sourceMappingURL=index.css.map */
