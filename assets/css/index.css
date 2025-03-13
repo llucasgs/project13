@@ -1,26 +1,17 @@
-@font-face {
-  font-family: "Baloo 2", sans-serif;
-  src: local(Baloo 2) url(../../assets/fonts/Baloo2-Bold.ttf) format("truetype");
-  font-style: normal;
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Leckerli One", cursive;
-  src: local(Leckerli One) url(../../assets/fonts/LeckerliOne-Regular.ttf) format("truetype");
-  font-style: normal;
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Open Sans", sans-serif;
-  src: local(Open Sans) url(../../assets/fonts/OpenSans-Regular.ttf) format("truetype");
-  font-style: normal;
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Open Sans", sans-serif;
-  src: local(Open Sans) url(../../assets/fonts/OpenSans-SemiBold.ttf) format("truetype");
-  font-style: normal;
-  font-weight: 600;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 2 | @import "variables.scss";
+ *   |         ^^^^^^^^^^^^^^^^
+ *   '
+ *   assets\sass\index.scss 2:9  root stylesheet */
 
-/*# sourceMappingURL=index.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import \"variables.scss\";\d\a   \2502          ^^^^^^^^^^^^^^^^\a   \2575 \a   assets\\sass\\index.scss 2:9  root stylesheet";
+}
