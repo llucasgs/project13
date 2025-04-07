@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festivite - Crie seu convite</title>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/ico/logo.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Lado esquerdo: Imagem fixa -->
+      <aside>
+        <div class="aside-container">
+          <header>
+            <img
+              src="./assets/ico/logo.svg"
+              alt="Logo Festivite"
+              class="logo"
+            />
+            <h1>Festivite</h1>
+            <p>Crie um convite digital para o seu evento</p>
+          </header>
+          <img
+            src="./assets/images/background.png"
+            alt="Bolo de aniversário"
+            class="cake-image"
+          />
+        </div>
+      </aside>
+
+      <!-- Lado direito: Conteúdo com rolagem -->
+      <main class="form-section">
+        <form class="invite-form">
+          <h2>Crie seu convite</h2>
+
+          <!-- SOBRE O EVENTO -->
+          <section class="form-group">
+            <fieldset>
+              <legend>Sobre o evento</legend>
+
+              <label for="title">Título</label>
+              <input
+                type="text"
+                id="title"
+                name="title"
+                placeholder="Nome do evento"
+              />
+
+              <div class="date-fields">
+                <div>
+                  <label for="start">Início</label>
+                  <input
+                    type="datetime"
+                    id="start"
+                    name="start"
+                    placeholder="DD/MM/AAAA, --:--"
+                  />
+                </div>
+                <div>
+                  <label for="end">Fim</label>
+                  <input
+                    type="datetime"
+                    id="end"
+                    name="end"
+                    placeholder="DD/MM/AAAA, --:--"
+                  />
+                </div>
+              </div>
+
+              <div class="event-type">
+                <label>Tipo</label>
+                <div class="radio-buttons">
+                  <label>
+                    <input type="radio" name="type" value="presencial" />
+                    Presencial
+                  </label>
+                  <label>
+                    <input type="radio" name="type" value="online" />
+                    Online
+                  </label>
+                </div>
+              </div>
+
+              <label for="local">Local</label>
+              <input
+                type="text"
+                id="local"
+                name="local"
+                placeholder="Link ou endereço"
+              />
+
+              <label for="descripton">Descrição</label>
+              <textarea
+                id="descripton"
+                name="descripton"
+                placeholder="Escreva sobre os detalhes do evento"
+              ></textarea>
+            </fieldset>
+          </section>
+
+          <!-- PERSONALIZAÇÃO -->
+          <section class="form-group">
+            <fieldset>
+              <legend>Personalização</legend>
+
+              <label>Cor principal</label>
+              <div class="color-picker">
+                <!-- Botões de cores a serem definidas em SCSS-->
+                <button type="button" class="color-option-1"></button>
+                <button type="button" class="color-option-2"></button>
+                <button type="button" class="color-option-3"></button>
+                <button type="button" class="color-option-4"></button>
+                <button type="button" class="color-option-5"></button>
+                <button type="button" class="color-option-6"></button>
+                <button type="button" class="color-option-7"></button>
+                <button type="button" class="color-option-8"></button>
+                <button type="button" class="color-option-9"></button>
+                <button type="button" class="color-option-10"></button>
+                <button type="button" class="color-option-11"></button>
+              </div>
+
+              <label>Tema do evento</label>
+              <div class="theme-options">
+                <button type="button" class="theme-option birthday">
+                  <img
+                    src="./assets/images/aniversario.png"
+                    alt="Bolo de aniversário"
+                  />
+                  <span>Aniversário</span>
+                </button>
+                <button type="button" class="theme-option childish">
+                  <img
+                    src="./assets/images/infantil.png"
+                    alt="Doces e comida infantil"
+                  />
+                  <span>Infantil</span>
+                </button>
+                <button type="button" class="theme-option graduation">
+                  <img
+                    src="./assets/images/formatura.png"
+                    alt="Roupa de formatura"
+                  />
+                  <span>Formatura</span>
+                </button>
+                <button type="button" class="theme-option wedding">
+                  <img src="./assets/images/casamento.png" alt="Alianças" />
+                  <span>Casamento</span>
+                </button>
+                <button type="button" class="theme-option baby-shower">
+                  <img
+                    src="./assets/images/cha-de-bebe.png"
+                    alt="Chá de bebê"
+                  />
+                  <span>Chá de bebê</span>
+                </button>
+                <button type="button" class="theme-option bridal-shower">
+                  <img
+                    src="./assets/images/cha-de-panela.png"
+                    alt="Chá de panela"
+                  />
+                  <span>Chá de panela</span>
+                </button>
+                <button type="button" class="theme-option carnival">
+                  <img src="./assets/images/carnaval.png" alt="Carnaval" />
+                  <span>Carnaval</span>
+                </button>
+                <button type="button" class="theme-option easter">
+                  <img src="./assets/images/pascoa.png" alt="Páscoa" />
+                  <span>Páscoa</span>
+                </button>
+                <button type="button" class="theme-option saint-john">
+                  <img src="./assets/images/sao-joao.png" alt="São João" />
+                  <span>São João</span>
+                </button>
+                <button type="button" class="theme-option halloween">
+                  <img src="./assets/images/halloween.png" alt="Halloween" />
+                  <span>Halloween</span>
+                </button>
+                <button type="button" class="theme-option christmas">
+                  <img src="./assets/images/natal.png" alt="Natal" />
+                  <span>Natal</span>
+                </button>
+                <button type="button" class="theme-option others">
+                  <img
+                    src="./assets/images/outro.png"
+                    alt="Pessoas confraternizando"
+                  />
+                  <span>Outro</span>
+                </button>
+              </div>
+
+              <div class="style-toggle">
+                <label for="dark-mode">Estilo</label>
+                <input type="checkbox" id="dark-mode" />
+                <span>Escuro</span>
+              </div>
+
+              <div class="file-upload">
+                <label for="cover-photo">Foto de capa</label>
+                <input type="file" id="cover-photo" name="cover-photo" />
+                <span>Nenhum arquivo selecionado</span>
+              </div>
+            </fieldset>
+          </section>
+
+          <!-- DADOS PARA CONTATO -->
+          <section class="form-group">
+            <fieldset>
+              <legend>Dados para contato</legend>
+
+              <div class="contact-name">
+                <label for="nome">Nome</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  placeholder="Nome completo"
+                  required
+                />
+                <div class="error">
+                  <img
+                    src="./assets/ico/circle-alert.svg"
+                    alt="Ícone de alerta vermelho indicando erro"
+                  />
+                  <small class="error-message">Campo obrigatório</small>
+                </div>
+              </div>
+
+              <div class="contact-details">
+                <div class="contact-email">
+                  <label for="email">E-mail</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="exemplo@email.com"
+                  />
+                </div>
+
+                <div class="contact-tel">
+                  <label for="telefone">Telefone</label>
+                  <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="(99) 99999-9999"
+                  />
+                </div>
+              </div>
+            </fieldset>
+          </section>
+
+          <!-- TERMOS E OPÇÕES -->
+          <section class="form-group">
+            <div class="checkbox-group">
+              <label>
+                <input type="checkbox" name="termos" required />
+                Li e concordo com os <a href="#">Termos e Condições</a> e com a
+                <a href="#">Política de Privacidade</a>
+              </label>
+
+              <label>
+                <input type="checkbox" name="promo-email" />
+                Aceito receber atualizações e promoções por e-mail
+              </label>
+
+              <label>
+                <input type="checkbox" name="promo-sms" />
+                Aceito receber atualizações e promoções por SMS
+              </label>
+            </div>
+          </section>
+
+          <!-- BOTÃO DE AÇÃO -->
+          <section class="form-group">
+            <button type="submit" class="submit-button">
+              <img src=".//assets/ico/ticket.svg" alt="" />
+              <span>Gerar convite</span>
+            </button>
+          </section>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
